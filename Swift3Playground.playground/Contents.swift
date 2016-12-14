@@ -1,5 +1,63 @@
 
-import UIKit
+import UIKit //Import statment
+
+
+//** Lessons Type declaration
+func changaOne(){
+    
+}
+class Manny{
+    
+}
+struct Moe{
+    
+}
+
+enum Jack{
+}
+
+
+
+
+//** Lessons let vs Var
+
+print("** Lessons let vs Var")
+let one = 1
+var two = 2
+two = one // two change to one which is fine
+//one = two //Compile error
+
+
+//** Lessons Function
+print("** Lessons functions")
+func go(){
+    let one = 1
+    var two = 2
+    two = one
+    print(SELF_LIBRARY_ORDINAL)
+}
+
+go()
+
+
+
+print("** Lessons extensions method")
+print("Hello");print("world") //Can put more than two statement in here
+
+let sum = 1+2
+let s=1.description //description is toString()?
+
+extension Int{
+    func sayHello(){
+        print("Extension say Hello , I am \(self)")
+    }
+}
+1.sayHello()
+print(s)
+
+
+
+print("** Lessons optional")
 
 //*** Lessons Optional
 
@@ -23,8 +81,8 @@ if let i = convertsStringInterger(str:strNumber){
     print("number could not be turned into an integer")
 }
 
-
-//*** Lessons Class and Objects
+print("** Lessons Class and objects ")
+//*** Lessons Class and Objects and self keywords because it point to instances of the class
 
 
 class Person {
