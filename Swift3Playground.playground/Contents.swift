@@ -30,6 +30,33 @@ two = one // two change to one which is fine
 
 //** Lessons Function
 print("** Lessons functions")
+
+func sum (_ x:Int,_ y:Int) -> Int  // The underscore can help avoid variable type as x: y:
+{
+    let result = x+y
+    return result
+    // (int, int) -> Function Signature
+    //_~space~ suppressing the external of the parameter name
+}
+
+var answer = sum(1,1)
+var answer2 = sum(12,sum(1,1))
+
+func say1(_ s:String)-> Void {print(s)}
+func say2(_ s:String)->() {print(s)}
+func say3(_ s:String){print(s)}
+
+say2("Something")
+
+func echoString(_ s:String, times: Int) -> String{
+   var result = ""
+    for _ in 1...times{ result += s}
+    return result
+}
+
+let something = echoString("hey ", times: 3)
+
+
 func go(){
     let one = 1
     var two = 2
@@ -53,8 +80,8 @@ extension Int{
     }
 }
 1.sayHello()
-print(s)
 
+print(s)
 
 
 print("** Lessons optional")
