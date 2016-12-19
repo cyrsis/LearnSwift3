@@ -26,6 +26,8 @@ wallet -= 10
 var summy : Bool = false
 
 
+
+
 //** Lessons let vs Var
 
 print("** Lessons let vs Var")
@@ -49,9 +51,31 @@ ceil(weight)   //Round down and Round up
 pow(5,5.2)  //Take Double and Double, and it working good!!!
 
 
+//Arrays
+
+var movies = ["Sandlot","Emperor's new Groove","Batman"]
+
+movies.append("Iron Man")
+
+movies.count
+movies.last
+movies.first
+
+print( movies)
+
+movies.insert("Back to the future", at: 4)
+
+movies.index(of: "Batman")
 
 
 var age = 125
+
+switch age {
+case 1...100:
+    "U are model"
+default:
+    "you are super man"
+}
 
 //age * weight //wont work
 Double(age) * weight
@@ -91,8 +115,22 @@ func echoString(_ s:String, times: Int) -> String{
     return result
 }
 
+for thenumber in 1...100{
+print("hello workd \(thenumber)")
+}
+
+enum Direction{
+case north
+case south
+case west
+case northNorthWest // style guide
+}
+
 let something = echoString("hey ", times: 3)
 
+
+UIColor.red //Find the color values
+#colorLiteral(red: 0.7254902124, green: 0.4784313738, blue: 0.09803921729, alpha: 1) //Or just type color
 
 func go(){
     let one = 1
