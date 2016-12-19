@@ -1,5 +1,6 @@
 
 import UIKit //Import statment
+import Foundation
 
 
 //** Lessons Type declaration
@@ -16,7 +17,13 @@ struct Moe{
 enum Jack{
 }
 
+var wallet = 0
+wallet += 50
+wallet -= 5
+wallet -= 10
 
+
+var summy : Bool = false
 
 
 //** Lessons let vs Var
@@ -24,9 +31,39 @@ enum Jack{
 print("** Lessons let vs Var")
 let one = 1
 var two = 2
+
+let intone : Int = 1
+var inttwo : Int = 2
 two = one // two change to one which is fine
 //one = two //Compile error
 
+
+//Swift like double vs float, always take double
+var weight : Double = 192.2343432423423432432432423
+
+weight
+
+floor(weight) //Rquire import Foundation
+ceil(weight)   //Round down and Round up
+
+pow(5,5.2)  //Take Double and Double, and it working good!!!
+
+
+
+
+var age = 125
+
+//age * weight //wont work
+Double(age) * weight
+
+
+let implicitInterger = 70
+let implicitDouble = 70.0
+//let ex
+
+var myname = "victor"
+
+"My name is \(myname)" //String concat
 
 //** Lessons Function
 print("** Lessons functions")
@@ -62,11 +99,19 @@ func go(){
     var two = 2
     two = one
     print(SELF_LIBRARY_ORDINAL)
+    two.hashValue
 }
 
 go()
 
+//Test for true and false
+false || false
+false || true
 
+true || true
+true && true
+
+//TODO Cannt get this funtion to work, here is the work process
 
 print("** Lessons extensions method")
 print("Hello");print("world") //Can put more than two statement in here
@@ -91,7 +136,13 @@ print("** Lessons optional")
 //Optional -> What is optional?
 //String to Int
 
-var str = "Hello, playground"
+var str = "Hello, playground👨" //because Swift Support Unicode
+
+
+//Hit command + control + space bar
+//👧🏼👳🏽
+
+str.lowercased() //Make it lower case
 
 //let strNumber = "123"
 let strNumber = "ABC"
